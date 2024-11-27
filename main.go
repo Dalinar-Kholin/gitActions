@@ -15,5 +15,5 @@ func main() {
 	f2 := 69.0
 	Adder.Adder(f1, f2)
 	fmt.Printf("value 1 := %v\n", f1)
-	fmt.Printf("%v\n", os.Getenv("PASSWORD"))
+	fmt.Printf("secret := _%v_\n", os.Getenv("PASSWORD"))
 }
