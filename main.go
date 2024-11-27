@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"gitAction/Adder"
+	"os"
 )
 
 func main() {
@@ -14,4 +15,5 @@ func main() {
 	f2 := 69.0
 	Adder.Adder(f1, f2)
 	fmt.Printf("value 1 := %v\n", f1)
+	fmt.Printf("%v\n", os.Getenv("PASSWORD"))
 }
